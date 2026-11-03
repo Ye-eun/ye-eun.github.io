@@ -1,0 +1,324 @@
+# Single source of truth for the website. Edit here, then run `python3 build.py`.
+# Keep wording in sync with the CV (Yeeun Kim_CV(<Mon><Year>).docx).
+
+[profile]
+name = "Yeeun Kim, Ph.D."
+title = "Postdoctoral Researcher"
+affiliation = "Smart & Safe Transportation Lab, Dept. of Civil, Environmental & Construction Engineering, University of Central Florida"
+emails = ["yeeun.kim@ucf.edu", "yeeun0802@gmail.com"]
+photo = "assets/img/profile.jpg"   # leave the file out to show initials instead
+cv = "assets/cv.pdf"
+scholar = "https://scholar.google.com/citations?hl=en&user=NyfZxrIAAAAJ"
+linkedin = "https://www.linkedin.com/in/yeeun-kim-820533186"
+# About Me text, as on the previous Google Sites page.
+bio = [
+  "I am a postdoctoral researcher at the University of Central Florida (UCF), working with Dr. Mohamed Abdel-Aty at SST Lab. Before I joined, I received my Ph.D. in Civil and Environmental Engineering from KAIST, South Korea, under the supervision of Dr. Hwasoo Yeo at AIxMobility Lab.",
+  "My research focuses on human driving behavior and its effects on traffic flow and safety, combining traffic flow modeling and empirical analysis. During my Ph.D., I developed microscopic and mesoscopic traffic simulation models that reflect human driver characteristics and integrated them into a multi-level simulation for large-scale urban networks. I also developed a real-time traffic prediction system that combines simulation with artificial intelligence (AI) models. At UCF, I have extended this focus to traffic safety by conducting driving simulator experiments and analyzing connected-vehicle data to derive practical safety implications.",
+]
+interests = ["Traffic flow theory", "Traffic simulation", "Car-following models", "Driver behavior modeling", "Traffic safety", "Traffic prediction"]
+
+# Research Interest, as on the previous Google Sites page. image = a figure from a lead-author paper.
+[[research]]
+title = "Traffic Flow Theory and Traffic Simulation"
+image = "assets/pubs/tits2026-nextsim.jpg"
+points = [
+  "Developing a micro-meso hybrid traffic simulation that assigns simulation resolution dynamically across large urban networks, and extending it to the macro scale with multi-class traffic.",
+  "Utilizing traffic simulation for ITS by generating synthetic traffic scenarios and combining them with data-driven methods to improve prediction performance under incident cases.",
+]
+[[research]]
+title = "Human Driving Behavior"
+image = "assets/pubs/trc2024-arm.jpg"
+points = [
+  "Modeling driver behavior from high-resolution vehicle trajectory and naturalistic driving data in highway and urban areas.",
+  "Running driving simulator experiments to measure how speed choice, attention, and risk-taking shift with road and traffic conditions.",
+]
+[[research]]
+title = "Traffic Safety"
+image = "assets/pubs/tra2026-speeding.jpg"
+points = [
+  "Developing crash risk and crash frequency models across highway and urban areas using detector, road network, and vehicle trajectory data.",
+]
+
+[[news]]
+date = "2026"
+text = "Five papers accepted for presentation at the 106th TRB Annual Meeting (2027)."
+[[news]]
+date = "2026"
+text = "Paper on speeding patterns from connected vehicle data published in <em>Transportation Research Part A: Policy and Practice</em>."
+[[news]]
+date = "2026"
+text = "NextSim, a multi-level traffic simulation with dynamic level assignment, published in <em>IEEE Transactions on Intelligent Transportation Systems</em>."
+[[news]]
+date = "2026"
+text = "Received the Best Paper Award from the Korean Society of Transportation."
+
+# ---------- Publications ----------
+# authors: use "*" suffix for corresponding author, exactly as in the CV.
+# image: thumbnail in assets/pubs/ (optional; shown only when she is first or corresponding author). selected = true shows it in "Selected".
+
+[[pubs]]
+title = "Exploring Factors Influencing Speeding Patterns With Connected Vehicle Data for Road Context-Sensitive Policy Implications"
+authors = ["Yeeun Kim*", "Mohamed Abdel-Aty", "Uibeom Chun"]
+venue = "Transportation Research Part A: Policy and Practice"
+details = "211, 105098"
+year = 2026
+doi = "10.1016/j.tra.2026.105098"
+image = "assets/pubs/tra2026-speeding.jpg"
+selected = true
+
+[[pubs]]
+title = "NextSim: Multi-Level Traffic Simulation for Urban Networks Using Dynamic Level Assignment"
+authors = ["Yeeun Kim", "Seongjin Choi", "Sujae Jeon", "Hwasoo Yeo*"]
+venue = "IEEE Transactions on Intelligent Transportation Systems"
+details = "27(7), 8564–8578"
+year = 2026
+doi = "10.1109/TITS.2026.3671220"
+image = "assets/pubs/tits2026-nextsim.jpg"
+selected = true
+
+[[pubs]]
+title = "Anticipatory Driving Maneuver for Safety and Comfort: Temporal Graph Cross Attention-Based Front Vehicle Trajectory Prediction"
+authors = ["Hyunsik Min", "Gyeongseon Baek", "Yeeun Kim", "Byeongjoon Noh*"]
+venue = "IEEE Transactions on Intelligent Transportation Systems"
+details = "Early Access"
+year = 2026
+doi = "10.1109/TITS.2026.3703652"
+
+[[pubs]]
+title = "Section-Based Crash Risk Analysis Integrating the Effect of Traffic States and Road Geometry"
+authors = ["Jihu Kim", "Yeeun Kim", "Hwasoo Yeo*"]
+venue = "IET Intelligent Transport Systems"
+details = "20(1), e70134"
+year = 2026
+doi = "10.1049/itr2.70134"
+
+[[pubs]]
+title = "A Two-Dimensional Lane-Changing Model With Asymmetric Driving Behavior"
+authors = ["Sujae Jeon", "Yeeun Kim", "Hwasoo Yeo*"]
+venue = "Journal of Korean Society of Transportation"
+details = "43(6), 815–829"
+year = 2025
+doi = "10.7470/jkst.2025.43.6.815"
+
+[[pubs]]
+title = "Anticipating Front-Side Vehicles' Maneuvers for Trustworthy Autonomous Driving"
+authors = ["Hyunsik Min", "Yeeun Kim", "Jungryul Kim", "Seongjin Lee", "Byeongjoon Noh*"]
+venue = "The Journal of the Korea Institute of Intelligent Transport Systems"
+details = "24(6), 121–133"
+year = 2025
+doi = "10.12815/kits.2025.24.6.121"
+
+[[pubs]]
+title = "Asymmetric Repulsive Force Model: A New Car-Following Model With Psycho-Physical Characteristics"
+authors = ["Yeeun Kim", "Hwasoo Yeo*"]
+venue = "Transportation Research Part C: Emerging Technologies"
+details = "161, 104571"
+year = 2024
+doi = "10.1016/j.trc.2024.104571"
+image = "assets/pubs/trc2024-arm.jpg"
+selected = true
+
+[[pubs]]
+title = "A Hybrid Approach of Traffic Simulation and Machine Learning Techniques for Enhancing Real-Time Traffic Prediction"
+authors = ["Yeeun Kim", "Hye-young Tak", "Sunghoon Kim", "Hwasoo Yeo*"]
+venue = "Transportation Research Part C: Emerging Technologies"
+details = "160, 104490"
+year = 2024
+doi = "10.1016/j.trc.2024.104490"
+image = "assets/pubs/trc2024-hybrid.jpg"
+selected = true
+
+[[pubs]]
+title = "A Study on Traffic Prediction Using Hybrid Approach of Machine Learning and Simulation Techniques"
+authors = ["Yeeun Kim", "Sunghoon Kim", "Hwasoo Yeo*"]
+venue = "The Journal of the Korea Institute of Intelligent Transport Systems"
+details = "20(5), 100–112"
+year = 2021
+doi = "10.12815/kits.2021.20.5.100"
+image = "assets/pubs/kits2021-hybrid.jpg"
+
+[[pubs]]
+title = "Development of an Asymmetric Car-Following Model and Simulation Validation"
+authors = ["Minju Park", "Yeeun Kim", "Hwasoo Yeo*"]
+venue = "IEEE Transactions on Intelligent Transportation Systems"
+details = "21(8), 3513–3524"
+year = 2019
+doi = "10.1109/TITS.2019.2930320"
+
+[[pubs]]
+title = "A Study on Development of a Car-Following Model for Accident Simulation Caused by Driver Distraction"
+authors = ["Yeeun Kim", "Seongjin Choi", "Hwasoo Yeo*"]
+venue = "Journal of Korean Society of Transportation"
+details = "37(1), 39–50"
+year = 2019
+doi = "10.7470/jkst.2019.37.1.039"
+image = "assets/pubs/jkst2019-distraction.jpg"
+
+[[pubs]]
+title = "Enhancing Healthcare Accessibility Measurements Using GIS: A Case Study in Seoul, Korea"
+authors = ["Yeeun Kim", "Young-Ji Byon", "Hwasoo Yeo*"]
+venue = "PLoS ONE"
+details = "13(2), e0193013"
+year = 2018
+doi = "10.1371/journal.pone.0193013"
+image = "assets/pubs/plos2018-healthcare.jpg"
+
+[[pubs]]
+title = "Evaluation of Accident Prevention Performance of Vision and Radar Sensor for Major Accident Scenarios in Intersection"
+authors = ["Yeeun Kim", "Sehyun Tak", "Jeongyun Kim", "Hwasoo Yeo*"]
+venue = "The Journal of the Korea Institute of Intelligent Transport Systems"
+details = "16(5), 96–108"
+year = 2017
+doi = "10.12815/kits.2017.16.5.96"
+image = "assets/pubs/kits2017-warning.jpg"
+
+[[under_review]]
+title = "A Driving Simulator Experiment of Drivers' Response to Roadside Visual Elements Across Suburban and Urban Roadway Environments"
+authors = ["Uibeom Chun", "Yeeun Kim*", "Mohamed Abdel-Aty"]
+venue = "Transportation Research Part F: Traffic Psychology and Behaviour"
+status = "submitted"
+[[under_review]]
+title = "Heterogeneous Road Environment Effects on Speeding across Driving Behavior Types Identified from Connected Vehicle Data"
+authors = ["Yeeun Kim*", "Mohamed Abdel-Aty"]
+venue = "Accident Analysis & Prevention"
+status = "submitted"
+[[under_review]]
+title = "Driver Distraction Tendency and Safety-Critical Response Heterogeneity: Implications for Personalized Forward Collision Warnings"
+authors = ["Uibeom Chun*", "Yeeun Kim", "Mohamed Abdel-Aty"]
+venue = "IEEE Open Journal of Intelligent Transportation Systems"
+status = "submitted"
+[[under_review]]
+title = "Modeling Human-Like Car-Following Behavior: A Literature Review and Future Research Directions"
+authors = ["Yeeun Kim", "Mohamed Abdel-Aty", "Hwasoo Yeo*"]
+venue = "Transport Reviews"
+status = "submitted"
+[[under_review]]
+title = "Ctx2TrajGen: Traffic Context-Aware Microscale Vehicle Trajectories Using Generative Adversarial Imitation Learning"
+authors = ["Joobin Jin", "Seokjun Hong", "Gyeongseon Baek", "Yeeun Kim", "Byeongjoon Noh*"]
+venue = "IEEE Transactions on Intelligent Transportation Systems"
+status = "under review"
+[[under_review]]
+title = "Lane-Changing Imminence-Aware Trajectory Prediction via Spatio-Temporal Interaction Context Modeling for Mixed Traffic"
+authors = ["Gyeongseon Baek", "Dongho Ka", "Jinseong Kim", "Yeeun Kim", "Byeongjoon Noh*"]
+venue = "IEEE Transactions on Intelligent Transportation Systems"
+status = "under review"
+
+[[presentations]]
+text = "Yeeun Kim* and Mohamed Abdel-Aty. Driver-Type Heterogeneity in Road Environment Effects on Speeding Behavior. 106th Transportation Research Board Annual Meeting, 2027 (accepted for presentation)."
+[[presentations]]
+text = "Uibeom Chun, Yeeun Kim*, and Mohamed Abdel-Aty. A Driving Simulator Experiment of Drivers' Response to Roadside Visual Elements Across Suburban and Urban Roadway Environments. 106th Transportation Research Board Annual Meeting, 2027 (accepted for presentation)."
+[[presentations]]
+text = "Sujae Jeon, Yeonwoo Yu, Dongheon Lee, Hwasoo Yeo, and Yeeun Kim*. Bus-UCTM: A Bus-Extended Multi-Lane Urban Cell Transmission Model for Mesoscopic Transit Operational Analysis. 106th Transportation Research Board Annual Meeting, 2027 (accepted for presentation)."
+[[presentations]]
+text = "Hyejin Kim*, Mohamed Abdel-Aty, and Yeeun Kim. Associating Signalized Intersections Skewness and Connected Vehicle-Based Risky Driving Behavior in Crash Type-Specific Frequency Models. 106th Transportation Research Board Annual Meeting, 2027 (accepted for presentation)."
+[[presentations]]
+text = "Uibeom Chun*, Yeeun Kim, and Mohamed Abdel-Aty. How Driver Distraction Tendency Shapes the Perception–Response Process and Its Implication for Personalized Forward Collision Warning. 106th Transportation Research Board Annual Meeting, 2027 (accepted for presentation)."
+[[presentations]]
+text = "Yeeun Kim*, Mohamed Abdel-Aty, and Uibeom Chun. Exploring Factors Influencing Speeding Patterns Identified From Connected Vehicle Data Considering Context Classification. 105th Transportation Research Board Annual Meeting, 2026 (accepted for presentation)."
+[[presentations]]
+text = "Sujae Jeon, Yeeun Kim, and Hwasoo Yeo*. A Two-Dimensional Lane-Changing Model With Asymmetric Driving Behavior for Autonomous Vehicles. 105th Transportation Research Board Annual Meeting, 2026 (accepted for presentation)."
+[[presentations]]
+text = "Hyunsik Min, Yeeun Kim, Jungryul Kim, Seongjin Lee, and Byeongjoon Noh*. Anticipating Front-Side Vehicles' Maneuvers for Trustworthy Autonomous Driving. 28th IEEE International Conference on Intelligent Transportation Systems (ITSC), 2025."
+[[presentations]]
+text = "Sujae Jeon, Yeeun Kim, and Hwasoo Yeo*. A Two-Dimensional Lane-Changing Model With Asymmetric Driving Behavior for Autonomous Vehicles. 28th IEEE International Conference on Intelligent Transportation Systems (ITSC), 2025."
+[[presentations]]
+text = "Jihu Kim, Yeeun Kim, and Hwasoo Yeo*. Analysis of Highway Traffic Crash Risk Considering Traffic States in Merging and Diverging Areas. 104th Transportation Research Board Annual Meeting, 2025 (accepted for presentation)."
+[[presentations]]
+text = "Yeeun Kim, Seongjin Choi, Sujae Jeon, and Hwasoo Yeo*. Multi-Level Traffic Simulation Using Dynamic Simulation Level Assignment for Urban Network. 103rd Transportation Research Board Annual Meeting, 2024 (accepted for presentation)."
+[[presentations]]
+text = "Hye-young Tak, Yeeun Kim, Sunghoon Kim, and Hwasoo Yeo*. A Hybrid Model for Real-Time Traffic Prediction With Augmented Historical Data Using Traffic Simulation. 26th IEEE International Conference on Intelligent Transportation Systems (ITSC), 2023."
+[[presentations]]
+text = "Yeeun Kim and Hwasoo Yeo*. The Development of Car-Following Model Considering Drivers' Asymmetric Behavior and Psychophysical Property. 102nd Transportation Research Board Annual Meeting, 2023 (accepted for presentation)."
+[[presentations]]
+text = "Yeeun Kim, Seongjin Choi, and Hwasoo Yeo*. Extended Urban Cell Transmission Model Using Agent-Based Modeling. 11th International Conference on Ambient Systems, Networks and Technologies (ANT), 2020."
+[[presentations]]
+text = "Sunghoon Kim, Sehyun Tak, Yeeun Kim, and Hwasoo Yeo*. An Area-Wide Estimation Model of Road Traffic Air Pollution: Application to Assessing Environmental Impacts of Urban Traffic Control. 26th ITS World Congress, 2019."
+[[presentations]]
+text = "Yeeun Kim, Seongjin Choi, Young-Ji Byon, and Hwasoo Yeo*. Development of Car-Following Model Considering Driver's Eye Glance Behavior to Simulate Hazardous Situation. 98th Transportation Research Board Annual Meeting, 2019."
+[[presentations]]
+text = "Yeeun Kim, Seongjin Choi, and Hwasoo Yeo*. Agent-Based Mesoscopic Urban Traffic Simulation Based on Multi-Lane Cell Transmission Model. 10th International Conference on Ambient Systems, Networks and Technologies (ANT), 2019."
+[[presentations]]
+text = "Yeeun Kim, Seongjin Choi, and Hwasoo Yeo*. Incorporation of Driver Distraction in Car-Following Model Based on Driver's Eye Glance Behavior. 21st IEEE International Conference on Intelligent Transportation Systems (ITSC), 2018."
+[[presentations]]
+text = "Sunghoon Kim, Sehyun Tak, Yeeun Kim, and Hwasoo Yeo*. A Study on Road Network Perimeter Control Policy for Reducing Air Pollution in Urban Area. International Symposium of Transportation Simulation (ISTS'18) / International Workshop on Traffic Data Collection and Its Standardization (IWTDCS'18), 2018."
+[[presentations]]
+text = "Yeeun Kim, Sehyun Tak, Jeongyun Kim, and Hwasoo Yeo*. Identifying Major Accident Scenarios in Intersection and Evaluation of Collision Warning System. 20th IEEE International Conference on Intelligent Transportation Systems (ITSC), 2017."
+[[presentations]]
+text = "Yeeun Kim, Sehyun Tak, Seongjin Choi, and Hwasoo Yeo*. Drivers' Eye Glance Transitions and the Implications on the Microscopic Traffic and Accident Simulation. 7th International Conference on Safety and Security Engineering (SAFE), 2017."
+[[presentations]]
+text = "Sehyun Tak*, Hwasoo Yeo, Yeeun Kim, and Seongjin Choi. A Study on the Dynamics of Driver Vision Transitions and Its Impacts on Vehicle Safety. 10th SHRP 2 Safety Data Symposium: From Analysis to Results, Transportation Research Board, 2017."
+
+# ---------- Experience ----------
+[[appointments]]
+period = "Mar. 2025 – Present"
+role = "Postdoctoral Researcher"
+org = "University of Central Florida"
+detail = "Smart and Safe Transportation Lab (Advisor: Dr. Mohamed Abdel-Aty)"
+[[appointments]]
+period = "Sep. 2023 – Feb. 2025"
+role = "Postdoctoral Researcher"
+org = "KAIST"
+detail = "AIxMobility Lab (Advisor: Dr. Hwasoo Yeo)"
+[[appointments]]
+period = "Sep. 2022 – Dec. 2022"
+role = "Visiting Scholar"
+org = "École Polytechnique Fédérale de Lausanne (EPFL)"
+detail = "Urban Transport Systems Lab (Advisor: Dr. Nikolas Geroliminis). Project: Exploring congested urban vehicle trajectory data. Funded by NRF and ETH Zurich (Young Researchers' Exchange Program between South Korea and Switzerland 2022)"
+[[appointments]]
+period = "Jan. 2019 – Dec. 2019"
+role = "Visiting Scholar"
+org = "New York University Abu Dhabi"
+detail = "Collaborator: Prof. Samer Madanat"
+[[appointments]]
+period = "Mar. 2016 – Aug. 2023"
+role = "Graduate Student Researcher"
+org = "KAIST"
+detail = "Dept. of Civil and Environmental Engineering"
+
+[[education]]
+period = "Aug. 2023"
+degree = "Ph.D., Civil and Environmental Engineering"
+org = "KAIST"
+detail = "Dissertation: Dynamic multilevel traffic simulation for urban traffic considering human driver behavior (Advisor: Dr. Hwasoo Yeo)"
+[[education]]
+period = "Feb. 2018"
+degree = "M.S., Civil and Environmental Engineering"
+org = "KAIST"
+detail = "Thesis: Analysis on driver's eye glance behavior and application to car-following model (Advisor: Dr. Hwasoo Yeo)"
+[[education]]
+period = "Feb. 2016"
+degree = "B.S., Civil and Environmental Engineering"
+org = "KAIST"
+detail = "Minor in Culture Technology"
+
+[[teaching]]
+text = "<b>Lead In-Class Instructor</b>, Introduction to Transportation Systems Engineering (undergraduate), KAIST, Spring 2024"
+[[teaching]]
+text = "<b>Guest Lecturer</b>, Transportation System Analysis and Operations (graduate), KAIST, Spring 2023 & Spring 2024"
+[[teaching]]
+text = "<b>Guest Lecturer</b>, Traffic Prediction Using Traffic Simulation and AI, NSF IRES US-KOREA ATI3 program, 2024"
+[[teaching]]
+text = "<b>Teaching Assistant</b>, transportation and machine learning courses at KAIST (2017–2021) and NYU Abu Dhabi (2019); NSF IRES ATI3 (2022–2023); NRF Korea-US Mobility & AI program (2024–2025)"
+
+[[awards]]
+year = "2026"
+text = "Best Paper Award, Korean Society of Transportation"
+[[awards]]
+year = "2022"
+text = "Best Paper Award (3rd), US-KOREA Advanced Transportation Infrastructure Informatics Institute (ATI3) Program"
+[[awards]]
+year = "2022"
+text = "Young Researchers' Exchange Program between South Korea and Switzerland, funded by NRF and ETH Zurich"
+[[awards]]
+year = "2021"
+text = "Best Paper Award, 2021 Spring Conference of the Korea Institute of Intelligent Transport Systems"
+[[awards]]
+year = "2017"
+text = "Seoul Creative Encouragement Awards, Seoul Research Papers Competition (Knowledge Management Division)"
+
+[service]
+journals = "IEEE Transactions on Intelligent Transportation Systems; Transportation Research Interdisciplinary Perspectives; Transport Policy; Journal of Traffic and Transportation Engineering (English Edition); Traffic Safety Research; Computers; Sensors; Applied Sciences; Sustainability"
+conferences = "IEEE ITSC; IEEE Intelligent Vehicles Symposium; TRB Annual Meeting"
+
+[references]
+text = "Available upon request."
