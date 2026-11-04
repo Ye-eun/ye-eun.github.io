@@ -4,7 +4,7 @@
 [profile]
 name = "Yeeun Kim, Ph.D."
 title = "Postdoctoral Researcher"
-affiliation = "Smart & Safe Transportation Lab, Dept. of Civil, Environmental & Construction Engineering, University of Central Florida"
+affiliation = ["Smart & Safe Transportation Lab", "Dept. of Civil, Environmental & Construction Engineering", "University of Central Florida"]  # one line each
 emails = ["yeeun.kim@ucf.edu", "yeeun0802@gmail.com"]
 photo = "assets/img/profile.jpg"   # leave the file out to show initials instead
 cv = "assets/cv.pdf"
