@@ -68,6 +68,9 @@ page = f"""<!doctype html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{esc(p["name"])}</title>
 <meta name="description" content="{esc(p['title'])}, {esc(p['affiliation'])}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
 <link rel="stylesheet" href="{v("assets/style.css")}">
 </head>
 <body>
@@ -83,7 +86,7 @@ page = f"""<!doctype html>
     <h1>{esc(p["name"])}</h1>
     <p class="role">{esc(p["title"])}</p>
     <p class="aff">{esc(p["affiliation"])}</p>
-    <p class="contact">{" · ".join(f'<a href="mailto:{e}">{e}</a>' for e in p["emails"])}</p>
+    <p class="contact">{"".join(f'<a href="mailto:{e}">{e}</a>' for e in p["emails"])}</p>
     <p class="quick"><a class="btn" href="{p["cv"]}" target="_blank">CV (PDF)</a><a class="btn ghost" href="{p["scholar"]}" target="_blank" rel="noopener">Google Scholar</a><a class="btn ghost" href="{p["linkedin"]}" target="_blank" rel="noopener">LinkedIn</a></p>
   </div>
 </header>
